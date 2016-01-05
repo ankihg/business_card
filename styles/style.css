@@ -39,27 +39,13 @@ a {
   color: green;
 }
 
-#ucoz {
+.link {
   color: green;
 margin-left: 5%;
 }
 
-#ucoz img {
+.link img {
 
  width: 5%;
  height: 7%;
 }
-
-#git {
-  color: green;
-
- margin-left: 5%;
-}
-
-#git img {
- display: inline;
- width: 5%;
- height: 7%;
-}
-
-#git h3 {}
