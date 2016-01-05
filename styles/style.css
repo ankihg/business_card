@@ -33,7 +33,10 @@ h1 {
 h2 {
   text-align:center;
   line-height: 60%;
+}
 
+a {
+  color: green;
 }
 
 #ucoz {
