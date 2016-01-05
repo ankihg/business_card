@@ -1,3 +1,8 @@
+body {
+  color: green;
+  background-color: black;
+}
+
 .item {
  display: inline;
  margin: 2%;
@@ -22,14 +27,36 @@
 
 h1 {
   text-align:center;
+  line-height: 0%;
+}
+
+h2 {
+  text-align:center;
+  line-height: 60%;
+
 }
 
 #ucoz {
- margin-left:5%;
+  color: green;
+margin-left: 5%;
 }
 
 #ucoz img {
+
+ width: 5%;
+ height: 7%;
+}
+
+#git {
+  color: green;
+
+ margin-left: 5%;
+}
+
+#git img {
  display: inline;
  width: 5%;
  height: 7%;
 }
+
+#git h3 {}
