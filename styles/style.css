@@ -2,28 +2,26 @@ body {
   color: green;
   background-color: black;
 }
-
-.item {
- display: inline;
- margin: 2%;
+.template {
+ display: block;
 }
 
-.item img {
+.template img {
  width: 48%;
- display:inline;
  margin: 1%;
+ display: inline;
 }
 
 
-.item h3 {
-  float: right;
+.template h3 {
   width: 48%;
 }
 
-.item p {
-  float: right;
+.template span {
   width: 48%;
+  color: yelow;
 }
+
 
 h1 {
   text-align:center;
