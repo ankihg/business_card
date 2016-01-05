@@ -1,0 +1,35 @@
+.item {
+ display: inline;
+ margin: 2%;
+}
+
+.item img {
+ width: 48%;
+ display:inline;
+ margin: 1%;
+}
+
+
+.item h3 {
+  float: right;
+  width: 48%;
+}
+
+.item p {
+  float: right;
+  width: 48%;
+}
+
+h1 {
+  text-align:center;
+}
+
+#ucoz {
+ margin-left:5%;
+}
+
+#ucoz img {
+ display: inline;
+ width: 5%;
+ height: 7%;
+}
