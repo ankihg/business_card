@@ -8,7 +8,7 @@ function Item(tmp) {
  this.date = tmp.date;
  this.about = tmp.about;
  this.url = tmp.url;
- //this.tags = tmp.tags;
+ this.tags = tmp.tags;
 }
 
 Item.prototype.toHTML = function() {
@@ -21,14 +21,18 @@ Item.prototype.toHTML = function() {
  $newItem.css('border-color', 'blue');
  $newItem.css('margin', '1%');
  $newItem.css('padding', '1%');
-  $newItem.css('overflow-y', 'scroll');
+ $newItem.css('overflow-y', 'scroll');
 
+
+ $newItem.removeClass('template');
+ $newItem.addClass('populated');
 
   $newItem.data('name', this.name);
   $newItem.data('imgSrc', this.imgSrc);
   $newItem.data('date', this.date);
   $newItem.data('about', this.about);
   $newItem.data('url', this.url);
+  $newItem.data('tags', this.tags);
   //$newItem.addTagsAsClasses();
 
 // this.relDate = parseInt((new Date() - new Date(this.date))/60/60/24/1000);
@@ -56,9 +60,6 @@ $text.css('display', 'inline');
 $newItem.find('.dat').text('published '+this.relDate+' days ago');
 
 
-
-$newItem.removeClass('template');
-$newItem.addClass('populated');
 
 return $newItem;
  //return "<a href='"+this.url+"' target='_blank'>"+'<div class="item"> <img src='+this.imgSrc+'> <p><strong>'+this.name+'</strong><br>  '+this.relDate+' days ago <br><br>'+this.about+"</p></div></a>";
