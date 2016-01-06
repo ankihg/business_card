@@ -21,6 +21,7 @@ Item.prototype.toHTML = function() {
  $newItem.css('border-color', 'blue');
  $newItem.css('margin', '1%');
  $newItem.css('padding', '1%');
+  $newItem.css('overflow-y', 'scroll');
 
 
   $newItem.data('name', this.name);
@@ -57,6 +58,7 @@ $newItem.find('.dat').text('published '+this.relDate+' days ago');
 
 
 $newItem.removeClass('template');
+$newItem.addClass('populated');
 
 return $newItem;
  //return "<a href='"+this.url+"' target='_blank'>"+'<div class="item"> <img src='+this.imgSrc+'> <p><strong>'+this.name+'</strong><br>  '+this.relDate+' days ago <br><br>'+this.about+"</p></div></a>";
@@ -69,7 +71,9 @@ Item.prototype.displayFirstPara = function($text) {
   $text.html($fPar);
 
   $button = $('<button/>');
-  $button.text('more plz');
+  $button.text('+');
+  $button.css('color', 'blue');
+  $button.css('font-size', '20px');
   var item = this;
   $button.on('click', function(e) {
    item.displayFull($text);

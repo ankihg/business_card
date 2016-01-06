@@ -1,9 +1,16 @@
 body {
   color: green;
   background-color: black;
+  font-size: 180%;
 }
+
+.main-nav {
+  font-size: 50%;
+}
+
 .template {
  display: block;
+ overflow-y: scroll;
 }
 
 .template img {
@@ -46,4 +53,36 @@ margin-left: 5%;
 
  width: 5%;
  height: 7%;
+}
+
+li img {
+
+ width: 5%;
+ height: 7%;
+}
+
+.main-nav {
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav li {
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
+}
+
+#about {
+ border-style: solid;
+ border-color: green;
+ color: blue;
+ margin: 1%;
+ padding: 1%;
+ font-size: 150%;
+}
+
+.dat {
+    font-size: 75%;
 }

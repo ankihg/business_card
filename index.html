@@ -1,16 +1,22 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="styles/icons.css">
 </head>
 <body>
 <br>
 <h1><u>ANNIKA HAGELIN</u></h1>
 <h2>welcome to my business card</h2>
 
-<a href="http://ankihg.ucoz.com/" target="_blank"><div class="link"><img src="https://avatars0.githubusercontent.com/u/15968660?v=3&s=460"><h3>personal website</h3></div></a>
-
-<a href="https://github.com/ankihg" target="_blank"><div class="link"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"><h3>github</h3></div></a>
-
+<nav class="main-nav">
+  <ul>
+    <!-- TODO: Use one of the icons from the available set for each of these nav items... -->
+    <li class="tab" data-content="items"><a href="#">  Home</a></li>
+    <li class="tab" data-content="about"><a href="#"></font> About</a></li>
+    <li><a href="http://ankihg.ucoz.com" target="_blank"> <img src="https://avatars0.githubusercontent.com/u/15968660?v=3&s=460">Personal Website</a></li>
+    <li><a href="http://github.com/ankihg" target="_blank"> <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"> GitHub</a></li>
+  </ul>
+</nav>
 
 <br>
 
@@ -30,12 +36,17 @@
 
 </section>
 
+<section id="about">
+  <h1>ABOUT</h1>
+  welcome. my name is annika. i come from the san francisco east bay and now i live in seattle. i like to program, study language, and play music.
+</section>
+
 
 
 <!-- include scripts -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="scripts/rawItems.js"></script>
 <script src="scripts/item.js"></script>
-
+<script src="scripts/itemView.js"></script>
 </body>
 </html>
