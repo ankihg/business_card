@@ -28,11 +28,32 @@ itemView.populateFilter = function() {
          $('#tag-filter').append(optionTag);
        }
      });
+ });
+};
 
+itemView.handleFilter = function() {
+  $('#tag-filter').on('change', function() {
+    itemView.clearItems();
+    itemView.displayTag($(this).val());
+  });
+};
+
+itemView.clearItems = function() {
+  $('section.populated').remove();
+};
+
+itemView.displayTag = function(tag) {
+  items.forEach(function(i){
+    alert(i.tags.indexOf(tag))
+   if (i.tags.indexOf(tag) >= 0) {
+     alert(i.name);
+    $('#items').append(i.toHTML());
+  }
  });
 };
 
 $(document).ready(function() {
   itemView.handleMainNav();
   itemView.populateFilter();
+  itemView.handleFilter();
 });
