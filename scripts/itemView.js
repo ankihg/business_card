@@ -33,10 +33,10 @@ itemView.populateFilter = function() {
 
 itemView.handleFilter = function() {
   $('#tag-filter').on('change', function() {
+    itemView.clearItems();
     if ($(this).val()=='') {
       itemView.displayAll();
     } else {
-      itemView.clearItems();
       itemView.displayTag($(this).val());
     }
   });
