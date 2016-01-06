@@ -86,3 +86,10 @@ li img {
 .dat {
     font-size: 75%;
 }
+
+#tag-filter {
+  background-color: green;
+  color: blue;
+  font-size: 150%;
+  margin-left: 5%;
+}

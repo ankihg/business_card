@@ -33,8 +33,12 @@ itemView.populateFilter = function() {
 
 itemView.handleFilter = function() {
   $('#tag-filter').on('change', function() {
-    itemView.clearItems();
-    itemView.displayTag($(this).val());
+    if ($(this).val()=='') {
+      itemView.displayAll();
+    } else {
+      itemView.clearItems();
+      itemView.displayTag($(this).val());
+    }
   });
 };
 
@@ -44,11 +48,15 @@ itemView.clearItems = function() {
 
 itemView.displayTag = function(tag) {
   items.forEach(function(i){
-    alert(i.tags.indexOf(tag))
    if (i.tags.indexOf(tag) >= 0) {
-     alert(i.name);
     $('#items').append(i.toHTML());
   }
+ });
+};
+
+itemView.displayAll = function() {
+  items.forEach(function(i){
+    $('#items').append(i.toHTML());
  });
 };
 
