@@ -1,0 +1,39 @@
+/*desktop layout*/
+@media only screen and (min-width: 600px) {
+
+  nav ul li {
+    display: inline;
+    margin: auto;
+    padding: 5%;
+  }
+
+  nav ul {
+    margin: auto;
+    padding: 5%;
+    float: right;
+  }
+
+}
+
+/*mobile*/
+@media (max-width: 600px) {
+  h1 {
+    font-size: 125%;
+  }
+
+  h2 {
+    font-size: 100%;
+  }
+
+  #filter-tag {
+    font-size: 80%;
+  }
+
+    .populated h1 {
+      font-size: 100%;
+    }
+
+    .populated p {
+      font-size: 80%;
+    }
+}
