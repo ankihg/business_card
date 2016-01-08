@@ -8,23 +8,22 @@ body {
   font-size: 50%;
 }
 
-.template {
+.item {
  display: block;
  overflow-y: scroll;
 }
 
-.template img {
+.item img {
  width: 48%;
  margin: 1%;
  display: inline;
 }
 
-
-.template h3 {
+.item h3 {
   width: 48%;
 }
 
-.template span {
+.item span {
   width: 48%;
   color: yelow;
 }
