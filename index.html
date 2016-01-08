@@ -4,6 +4,24 @@
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link rel="stylesheet" type="text/css" href="styles/layout.css">
 <!-- <link rel="stylesheet" type="text/css" href="styles/icons.css"> -->
+
+<script id='item-post' type='text/x-handlebars-template'>
+
+  <section class='item' id="{{id}}">
+  <a target="_blank" href="{{url}}">
+  <h1>{{name}}</h1>
+
+  <img src={{imgSrc}}>
+  </a>
+  <span class="text" style="display:inline;float:right">{{{about}}}</span>
+
+  <span class="dat">{{date}}</span>
+
+  </section>
+
+</script>
+
+
 </head>
 <body>
 <br>
@@ -12,7 +30,6 @@
 
 <nav class="main-nav">
   <ul>
-    <!-- TODO: Use one of the icons from the available set for each of these nav items... -->
     <li class="tab" data-content="items"><a href="#">  Home</a></li>
     <li class="tab" data-content="about"><a href="#"></font> About</a></li>
     <li><a href="http://ankihg.ucoz.com" target="_blank"> <img src="https://avatars0.githubusercontent.com/u/15968660?v=3&s=460">Personal Website</a></li>
@@ -34,7 +51,7 @@
       </ul> -->
     </div>
 
-<section class='template'>
+<!-- <section class='template'>
 <a target="_blank">
 <h1></h1>
 
@@ -44,7 +61,7 @@
 
 <span class="dat"></span>
 
-</section>
+</section> -->
 
 </section>
 
@@ -57,6 +74,7 @@
 
 <!-- include scripts -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 <script src="scripts/rawItems.js"></script>
 <script src="scripts/item.js"></script>
 <script src="scripts/itemView.js"></script>
