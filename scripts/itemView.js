@@ -49,14 +49,16 @@ itemView.clearItems = function() {
 itemView.displayTag = function(tag) {
   items.forEach(function(i){
    if (i.tags.indexOf(tag) >= 0) {
-    $('#items').append(i.toHTML());
+     i.make();
+    //$('#items').append(i.toHTML());
   }
  });
 };
 
 itemView.displayAll = function() {
   items.forEach(function(i){
-    $('#items').append(i.toHTML());
+    i.make();
+    //$('#items').append(i.toHTML());
  });
 };
 

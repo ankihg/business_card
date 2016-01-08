@@ -11,6 +11,11 @@ function Item(tmp) {
  this.tags = tmp.tags;
 }
 
+Item.prototype.make = function() {
+  $('#items').append(this.toHTML())
+  this.handleJQuery();
+};
+
 Item.prototype.toHTML = function() {
   // DID: Use handlebars to render your articles.
   //       - Get your template from the DOM.
@@ -48,8 +53,17 @@ this.displayFirstPara($item);*/
 
 // this.displayFirstPara(html);
 
+
 return html;
   // DID: Use the function that Handlebars gave you to return your filled-in html template for THIS article.
+}
+
+Item.prototype.handleJQuery = function() {
+  var $item = $('#'+this.id);
+  $item.data('tags', this.tags);
+  $item.addClass('populated');
+  var $text = $item.find('.text');
+  this.displayFirstPara($text);
 }
 
 /*Item.prototype.toHTML = function() {
@@ -139,10 +153,16 @@ rawData.forEach(function(ele) {
 });
 
 items.forEach(function(a){
-  $('#items').append(a.toHTML())
+  a.make();
+  // $('#items').append(a.toHTML())
+  // a.handleJQuery();
+  //$('#items').append(a.make())
 });
 
-items.forEach(function(i){
-  var $item = $('#'+i.id).find('.text');
-  i.displayFirstPara($item);
-});
+/*items.forEach(function(i){
+  var $item = $('#'+i.id);
+  $item.data('tags', i.tags);
+  $item.addClass('populated');
+  var $text = $item.find('.text');
+  i.displayFirstPara($text);
+});*/

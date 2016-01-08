@@ -16,7 +16,7 @@ aboutView.handle = function() {
       title = 'DE MOI';
       txt = "bienvenue. je m'appelle annika. je suis de la région de la baie de san francsico y maintenant j'habite à seattle. j'aime programmer, étudier langue, y joeur de la musique.";
     } else if (r < 4) {
-      title = 'PRI MI';
+      title = 'PRI MIN';
       txt = 'bonvena. mi nomigxas annika. mi venas de la regiono de la golfo de san francisko kaj nun mi logxas en seatlo. mi sxatas programi, studi lingvon, kaj ludi muzikon.';
     }
 
